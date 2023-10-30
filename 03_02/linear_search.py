@@ -7,6 +7,7 @@ def linear_search(data, target):
         else:
             a +=1
             continue
+    return -1
 
 
 data = [4, 5, 2, 7, 1, 8]
