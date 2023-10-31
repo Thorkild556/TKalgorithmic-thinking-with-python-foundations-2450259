@@ -15,12 +15,11 @@ def make_change(target_amount):
         for money in list:
             if money <= difference:
                 difference -= money
-                print(difference)
                 end_money.append(money)
                 break
-            else: continue
     return end_money
 
 
 print(make_change(24))  # 3: 20p + 2p + 2p
 print(make_change(163))  # 5: £1 + 50p + 10p + 2p + 1p
+print(make_change(201))
