@@ -1,5 +1,25 @@
+
 def make_change(target_amount):
-    pass  # Write your solution here. 
+    pass
+    onep = 1
+    twop = 2
+    fivep = 5
+    tenp = 10
+    twentyp = 20
+    fiftyp = 50
+    oneP = 100
+    list = [oneP, fiftyp, fiftyp, twentyp, tenp, fivep, twop, onep]
+    end_money = []
+    difference = target_amount
+    while difference != 0:
+        for money in list:
+            if money <= difference:
+                difference -= money
+                print(difference)
+                end_money.append(money)
+                break
+            else: continue
+    return end_money
 
 
 print(make_change(24))  # 3: 20p + 2p + 2p
